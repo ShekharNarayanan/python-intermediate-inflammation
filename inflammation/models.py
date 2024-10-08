@@ -55,4 +55,5 @@ def patient_normalise(data):
         normalised = data / max_data[:, np.newaxis]
     normalised[np.isnan(normalised)] = 0
     normalised[normalised < 0] = 0
-    return data / max_data[:, np.newaxis]
+
+    return normalised
